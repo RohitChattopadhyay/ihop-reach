@@ -1,9 +1,10 @@
 ## iHOP-Reach Database container
 
-**Step 1** Download the files and build using
+**Step 1** Pull the image from [Docker Hub](https://hub.docker.com/r/rchattopadhyay/ihop-database)
 
-    docker build -t ihop-database .
+    docker pull rchattopadhyay/ihop-database
 
 **Step 2** Run the instance using
 
-     docker run -v /path/to/dataset.zip:/home/dataset.zip -p 27017:27017 ihop-database
+    docker run -p PORT:27017 rchattopadhyay/ihop-database
+Mention the PORT in above command where you wish to expose the image from your localhost
