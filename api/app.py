@@ -11,16 +11,22 @@ from eve_swagger import swagger # Swagger for API
 def on_fetched_resource(resource,response):
     response['items'] = response.pop('_items')
     for doc in response['items']:
-        doc['id'] = doc.pop('_id') #Change name of id key in response
-        del doc['_created']
-        del doc['_updated']
+        try:
+            doc['id'] = doc.pop('_id') #Change name of id key in response
+            del doc['_created']
+            del doc['_updated']
+        except:
+            print("Could not delete")
 
 #function to delete _created and _updated from item dictionary
 def on_fetched_item(response):
-    del response['_updated']              # Delete _updated key in response
-    del response['_created']              # Delete _created key in response
-    del response['_links']               # Delete _links Hateos key in response
-    response['id'] = response.pop('_id')   # Change name of id key in response
+    try:
+        del response['_updated']              # Delete _updated key in response
+        del response['_created']              # Delete _created key in response
+        del response['_links']               # Delete _links Hateos key in response
+        response['id'] = response.pop('_id')   # Change name of id key in response
+    except:
+        print("Could not delete")
 
 # Create a pyeve instance
 app = Eve("iHOP API")
