@@ -1,14 +1,13 @@
 FROM mongo:4.0.9
 
 # Copy script
-COPY ./setup.sh /home/setup.sh
-RUN chmod 777 /home/setup.sh
+COPY ./setup.sh /src/setup.sh
+RUN chmod 777 /src/setup.sh
 
-WORKDIR /home
+WORKDIR /src
 # For installing unzip package
 RUN apt-get update
-# Install wget and unzip 
-RUN apt-get install wget
+# Install unzip
 RUN apt-get install unzip
 # Command to start the image
-CMD /home/setup.sh
+CMD /src/setup.sh
