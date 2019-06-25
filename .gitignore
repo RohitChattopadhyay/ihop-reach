@@ -1,0 +1,10 @@
+
+src/
+
+*.csv
+
+\.vscode/
+
+*.zip
+
+*.xml
