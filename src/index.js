@@ -1,4 +1,5 @@
 const express = require('express');
+const compression =  require('compression')
 const graphqlHTTP = require('express-graphql');
 const {
     buildSchema
@@ -129,17 +130,17 @@ const schema = buildSchema(`
             identifier: String!
         ): Entities
 
-		"It returns all unique identifiers present in database"
-        uniqueIdentifiers(limit: Int): [String]
-
 		"It returns details of all Identifiers details present in database."
-        allIdentifiers : [IdentifierDetails]
+        allIdentifiers(limit: Int) : [IdentifierDetails]
 
 		"It returns Identifier details by identifier"
         identifier(
             "Identifier of the Entity (Case sensitive)"
             identifier: String!
         ): IdentifierDetails
+
+#        "It returns all unique identifiers present in database"
+#        uniqueIdentifiers(limit: Int): [String]
     }
 	
 	"Object type for documentByIdentifier query. Returns all articles consisting the searched identifier."    
@@ -221,21 +222,21 @@ const schema = buildSchema(`
     }    
 `);
 
-async function uniIden(db) {
-    return await new Promise(async (resolve, reject) => {
-        var idenArr = await db.collection("identifier_mapping").distinct("iden")
-        var sortedArr = idenArr.sort((x,y) =>{
-            if (x<y)
-                return 1
-            else if(x>y)
-                return -1
-            else
-                return 0
-        })
-        console.log("Total Identifiers: ", sortedArr.length)
-        resolve(sortedArr)
-    })
-}
+// async function uniIden(db) {
+//     return await new Promise(async (resolve, reject) => {
+//         var idenArr = await db.collection("identifier_mapping").distinct("iden")
+//         var sortedArr = idenArr.sort((x,y) =>{
+//             if (x<y)
+//                 return 1
+//             else if(x>y)
+//                 return -1
+//             else
+//                 return 0
+//         })
+//         console.log("Total Identifiers: ", sortedArr.length)
+//         resolve(sortedArr)
+//     })
+// }
 
 // Provide resolver functions for schema fields
 const collection = "articles" // Set collection name
@@ -368,21 +369,21 @@ const resolvers = {
         })
     }),
     //	It returns all unique identifiers present in database
-    _uniqueIdentifiers: async (args, context) => {        
-        return await context().then(async client => {
-            let db = client.db(dbName)
-            return uniIden(db).then((r) => {
-                client.close();
-                let limit = args["limit"]>0?args["limit"]:r.length
-                return r.slice(0,limit)
-            })
-        })
-    },
+    // uniqueIdentifiers: async (args, context) => {        
+    //     return await context().then(async client => {
+    //         let db = client.db(dbName)
+    //         return uniIden(db).then((r) => {
+    //             client.close();
+
+    //         })
+    //     })
+    // },
     //	It returns details of all Entities present in database by identifiers.
     allIdentifiers: (args, context) => context().then(async client => {
         let db = client.db(dbName)        
         let res = await db.collection("identifier_mapping").find().toArray()
         client.close()
+        let limit = args["limit"]>0?args["limit"]:res.length
         return res.sort((a,b)=>{
             x = a.iden
             y = b.iden
@@ -392,7 +393,7 @@ const resolvers = {
                 return 1
             else
                 return 0
-        })
+        }).slice(0,limit)
     }),
     //	It returns Entity details by identifier
     identifier: (args, context) => context().then(async client => {
@@ -485,6 +486,7 @@ const welcomeMsg = `
 `
 // Starting the application
 const app = express();
+app.use(compression())
 const PORT = process.env.PORT || 8080
 app.use('/', graphqlHTTP({
     schema,
