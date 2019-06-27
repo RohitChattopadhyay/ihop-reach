@@ -106,22 +106,39 @@ const schema = buildSchema(`
 #            _id: ID!
 #        ): Document
 
-		"Returns all the articles of the specified identifier"
-        articlesByIdentifier(
-            "Identifier of the Entity"
-            id: String!
+		"""
+        Returns all the documents of the specified identifier  
+
+        Example:  
+        {\n  
+                documentsByIdentifier(identifier : "chebi:CHEBI:1"){  
+                    documents{  
+                        extracted_information{  
+                            participant_b{  
+                                identifier  
+                            }  
+                        }  
+                    }  
+                }  
+        }  
+
+        The query will return all documents having participant_a/b.identifier as chebi:CHEBI:1
+        """
+        documentsByIdentifier(
+            "Identifier of the Entity (Case sensitive)"
+            identifier: String!
         ): Entities
 
 		"It returns all unique identifiers present in database"
         uniqueIdentifiers(limit: Int): [String]
 
-		"It returns details of all Entities present in database by identifiers."
+		"It returns details of all Identifiers details present in database."
         allIdentifiers : [IdentifierDetails]
 
-		"It returns Entity details by identifier"
+		"It returns Identifier details by identifier"
         identifier(
-            "Identifier of the Entity"
-            id: String!
+            "Identifier of the Entity (Case sensitive)"
+            identifier: String!
         ): IdentifierDetails
     }
 	
@@ -129,12 +146,15 @@ const schema = buildSchema(`
     type Entities {
         count : Int
         searchkey : String
-        articles: [Document]
+        documents: [Document]
     }
 	"Object type for identifier and allIdentifiers queries. Returns identifier details."
     type IdentifierDetails {
+        "Entity Identifier"
         iden : String
+        "Entity Synonyms"
         syn : [String]
+        "Entity Type"
         typ: String
     }
 	"Object type for article and allArticles queries. Returns all Biomedical details from the extracted article details."
@@ -201,7 +221,6 @@ const schema = buildSchema(`
     }    
 `);
 
-// TODO Change function
 async function uniIden(db) {
     return await new Promise(async (resolve, reject) => {
         var idenArr = await db.collection("identifier_mapping").distinct("iden")
@@ -329,9 +348,9 @@ const resolvers = {
 
     // Returns all the document of the specified identifier
     // TODO change to documentByIdentifier after making necessory changes in GatsbyJS
-    articlesByIdentifier: (args, context) => context().then(client => {
+    documentsByIdentifier: (args, context) => context().then(client => {
         let db = client.db(dbName)
-        const id = args.id.trim()
+        const id = args.identifier.trim()
         let nameArr = []
         return db.collection(collection).find({
             $or: [{
@@ -342,14 +361,14 @@ const resolvers = {
         }).toArray().then((arr) => {
             client.close()
             return {
-                "articles": arr,
+                "documents": arr,
                 "count": arr.length,
                 "searchkey": id
             }
         })
     }),
     //	It returns all unique identifiers present in database
-    uniqueIdentifiers: async (args, context) => {        
+    _uniqueIdentifiers: async (args, context) => {        
         return await context().then(async client => {
             let db = client.db(dbName)
             return uniIden(db).then((r) => {
@@ -364,12 +383,21 @@ const resolvers = {
         let db = client.db(dbName)        
         let res = await db.collection("identifier_mapping").find().toArray()
         client.close()
-        return res
+        return res.sort((a,b)=>{
+            x = a.iden
+            y = b.iden
+            if (x<y)
+                return -1
+            else if(x>y)
+                return 1
+            else
+                return 0
+        })
     }),
     //	It returns Entity details by identifier
     identifier: (args, context) => context().then(async client => {
         let db = client.db(dbName)
-        let res = await db.collection("identifier_mapping").findOne({"iden": args.id})
+        let res = await db.collection("identifier_mapping").findOne({"iden": args.identifier})
         client.close()
         return res
         }
