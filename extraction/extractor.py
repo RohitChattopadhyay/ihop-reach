@@ -47,7 +47,8 @@ def extractFromXML(fileContent):
         PMCID   = article_info["pmcid"] or ""
         PMID    = article_info["pmid"] or ""
         # storing in csv file 
-        print(title,Year,DOI,PMCID,PMID,sep=",",file=destCSV)
+
+        print('"{}",{},"{}",{},{}'.format(title,Year,DOI,PMCID,PMID),file=destCSV)
     # Closing file
     destCSV.close()
 
