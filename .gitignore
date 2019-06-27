@@ -8,3 +8,7 @@ src/
 *.zip
 
 *.xml
+
+extraction/source/
+
+*.gz

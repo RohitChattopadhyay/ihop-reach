@@ -4,11 +4,16 @@ import os.path
 import time
 start_time = time.time()
 # Read from file
-tree = ET.parse('source/pubmed19n0654.xml')
-# root = tree.getroot()
 
+if(len(sys.argv)!=3):
+    print("Less arguments provided")
+    print("python <SCRIPT_NAME>.py <INPUT>.xml <OUTPUT>.csv")
+    print("Closing Script")
+    quit()
+
+tree = ET.parse(sys.argv[1])
 # Set Destination file name
-destFileName = "output.csv"
+destFileName = sys.argv[2]
 
 # Opening destination file
 if(os.path.isfile(destFileName)):
@@ -31,20 +36,23 @@ def _convert_month_abbv_to_int(month_abbrv):
 pm_articles = tree.findall('./PubmedArticle')
 for art_ix, pm_article in enumerate(pm_articles):
     medline_citation = pm_article.find('./MedlineCitation')
+    pubmed = pm_article.find('./PubmedData')
+    history_pub_date =  pubmed.find('./History/PubMedPubDate[@PubStatus="pubmed"]')
+    year = parser._find_elem_text(history_pub_date, 'Year')
+    month = parser._find_elem_text(history_pub_date, 'Month')
+    day = parser._find_elem_text(history_pub_date, 'Day')
 
-    journal = medline_citation.find('Article/Journal')
     # Add the Publication date from Journal info
-    journal_pub_date = journal.find('JournalIssue/PubDate')
-    year = parser._find_elem_text(journal_pub_date, 'Year')
-    month = parser._find_elem_text(journal_pub_date, 'Month')
-    day = parser._find_elem_text(journal_pub_date, 'Day')
 
     pub_date = {
         "year"  : None if (year  is None) else int(year),
-        "month" : None if (month is None) else _convert_month_abbv_to_int(month),
-        "day"   : None if (day   is None) else int(day),
-        "medline_date" : parser._find_elem_text(journal_pub_date, 'MedlineDate')
+        "month" : None if (month is None) else int(month),
+        "day"   : None if (day   is None) else int(day)
     }
+    test = {}
+    test["publication_date"] =pub_date
+    print(test)
+    continue
     # Get article info
     article_info = parser._get_article_info(medline_citation, pm_article.find('PubmedData'))
     # Get journal info
