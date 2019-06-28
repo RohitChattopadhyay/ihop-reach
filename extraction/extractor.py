@@ -1,4 +1,4 @@
-import os,gzip,time,sys
+import os,gzip,time,sys,csv
 import indra.literature.pubmed_client as parser
 import xml.etree.ElementTree as ET
 start_time = time.time()
@@ -16,7 +16,7 @@ def extractFromXML(fileContent):
     else:
         destCSV = open(destFileName, 'w')
         print("Journal Title,Year,DOI,PMCID,PMID", file=destCSV)
-    
+    writer = csv.writer(destCSV, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     tree = ET.fromstring(fileContent)
     pm_articles = tree.findall('./PubmedArticle')
     # TODO change to indra package function get_metadata
@@ -47,15 +47,17 @@ def extractFromXML(fileContent):
         PMCID   = article_info["pmcid"] or ""
         PMID    = article_info["pmid"] or ""
         # storing in csv file 
-
-        print('"{}",{},"{}",{},{}'.format(title,Year,DOI,PMCID,PMID),file=destCSV)
+        writer.writerow([title,Year,DOI,PMCID,PMID])
     # Closing file
     destCSV.close()
 
 
 rootDir = sys.argv[1] or None
 directory = os.fsencode(rootDir)
-for file in os.listdir(directory):
+dirlist = os.listdir(directory)
+dirlist.sort()
+print("Total files found: ", len(dirlist))
+for file in dirlist:
      filename = os.fsdecode(file)
      if filename.endswith(".gz"): 
          filePath = os.path.join(rootDir,filename)
