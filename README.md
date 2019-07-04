@@ -1,4 +1,7 @@
-## iHOP-Reach API container
+## iHOP-Reach REST API container
+
+For GraphQL based API use [`docker-api`](https://github.com/RohitChattopadhyay/ihop-reach/tree/docker-api) branch.  
+
 
 **Step 1** Build the Docker image using
 
