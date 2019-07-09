@@ -18,7 +18,7 @@
     "default": {
         "indra": {
             "git": "https://github.com/sorgerlab/indra",
-            "ref": "a4c8c708b5235fe647f115773dc27ecc00a687dc"
+            "ref": "cf7ecc9112a92678c2cb10d30ab02a0ae54454d6"
         },
         "pymongo": {
             "hashes": [
