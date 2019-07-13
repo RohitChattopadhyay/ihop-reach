@@ -39,7 +39,7 @@ payloadLimit = 1000
 threadsLimit = 10
 refreshCollection()
 # Extracting important information
-fields = ['journal_title','year','doi','pmcid','pmid']
+fields = ['journal_title','year','doi','pmcid','pmid','article_type','mesh_headings']
 # Saving in CSV file
 documents = []
 threads = [None] * threadsLimit
@@ -50,11 +50,16 @@ for row in reader:
     if count == 1:
         # Ignore header of CSV
         continue
+    if len(row[3])<2:
+        # ignore rows with empty pmcid
+        count -=1
+        continue
     document = {}
     i = 0
     for field in fields:
         document[field] = row[i]
         i += 1
+    document[field] = document[field].split(' , ')
     documents.append(document)
     if count%payloadLimit==0:
         threads[threadsCount] = threading.Thread(target=sendToMongo, args=(documents,))
