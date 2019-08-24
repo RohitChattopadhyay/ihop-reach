@@ -244,9 +244,14 @@ const resolvers = {
           [
             {
               $match: {
-                $text: {
-                  $search : '\"' + id + '\"'
-                }
+                $or: [
+                  {
+                    "extracted_information.participant_a.identifier": id
+                  },
+                  {
+                    "extracted_information.participant_b.identifier": id
+                  }
+                ]
               }
             },
             {
