@@ -47,17 +47,23 @@ print("Reading documents")
 for article in articles:
     info = article["extracted_information"]
     for participant in info["participant_b"]:
-        identifiers[participant["identifier"]].add(participant["entity_text"].lower())
-        entType[participant["identifier"]] = (participant["entity_type"])
+        try:
+            identifiers[participant["identifier"]].add(participant["entity_text"].lower())
+            entType[participant["identifier"]] = (participant["entity_type"])
+        except:
+            print(participant)
     for participant in info["participant_a"]:
-        identifiers[participant["identifier"]].add(participant["entity_text"].lower())
-        entType[participant["identifier"]] = (participant["entity_type"])
+        try:
+            identifiers[participant["identifier"]].add(participant["entity_text"].lower())
+            entType[participant["identifier"]] = (participant["entity_type"])
+        except:
+            print(participant)
     print(i, end=" ")
     i += 1
 i = 0
 print("\nAdding {} identifiers".format(len(entType)))
 for iden in identifiers:
-    if "uazid" in iden:
+    if "uaz" in iden:
         continue
     i += 1    
     obj = {
