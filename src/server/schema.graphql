@@ -3,9 +3,11 @@ schema {
 }
 "Options for entity type."
 enum entityTypeEnum {
+	bioprocess
     celltype
     cellular_component
     family
+    gene
     gene_or_gene_product
     organ
     protein
