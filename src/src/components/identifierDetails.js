@@ -12,15 +12,16 @@ class Links extends React.Component {
     // list of baseURLs
     const baseURL = {
       // [namespace]  : [baseURL, Name of the namespace]
-      ["go"]: ["http://identifiers.org/go/", "GO"],
-      ["uniprot"]: ["http://identifiers.org/uniprot/", "UniProt"],
-      ["hmdb"]: ["http://identifiers.org/hmdb/", "HMDB"],
-      ["pubchem"]: ["http://identifiers.org/pubchem.compound/", "PubChem"],
-      ["pfam"]: ["http://identifiers.org/pfam/", "Pfam"],
-      ["interpro"]: ["http://identifiers.org/interpro/", "InterPro"],
       ["be"]: ["https://github.com/sorgerlab/famplex", "FamPlex"],
-      ["taxonomy"]: ["http://identifiers.org/taxonomy/", "Taxonomy"],
       ["chebi"]: ["http://identifiers.org/chebi/", "ChEBI"],
+      ["hgnc"]: ["http://identifiers.org/hgnc/", "HGNC"],
+      ["hmdb"]: ["http://identifiers.org/hmdb/", "HMDB"],
+      ["go"]: ["http://identifiers.org/go/", "GO"],
+      ["interpro"]: ["http://identifiers.org/interpro/", "InterPro"],
+      ["pfam"]: ["http://identifiers.org/pfam/", "Pfam"],
+      ["pubchem"]: ["http://identifiers.org/pubchem.compound/", "PubChem"],
+      ["taxonomy"]: ["http://identifiers.org/taxonomy/", "Taxonomy"],
+      ["uniprot"]: ["http://identifiers.org/uniprot/", "UniProt"]
     }
     var namespace, id
     var identifierArray = identifier.split(/:(.+)/)
