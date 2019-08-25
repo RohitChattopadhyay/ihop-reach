@@ -30,7 +30,12 @@ class Links extends React.Component {
     namespace = identifierArray[0]
     id = identifierArray[1] // for identifiers with 2 components
     var urlID = namespace === "be" ? "" : id //condition for be namespace
-    var urlNamespace = baseURL[namespace][0] // getting url
+    try {
+      var urlNamespace = baseURL[namespace][0] // getting url
+    } catch (err) {
+      console.log("Missing identifier namespace: ", identifier)
+      return null
+    }
     // checking url validity
     if (urlNamespace !== undefined || id !== undefined)
       return (
