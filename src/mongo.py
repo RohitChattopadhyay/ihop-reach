@@ -6,7 +6,7 @@ from os.path import join, getsize
 from pymongo import MongoClient
 try:
 #    mongo_ip = os.environ['MONGOIP']
-    mongo_client = MongoClient(connect=False, host = "172.17.0.2" ,port=27017)
+    mongo_client = MongoClient(connect=False, host = "172.17.0.6" ,port=27017)
     # mongo_client = MongoClient(connect=False)
     mongo_col = mongo_client["iHOP"]["articles"]         # SET DB DETAILS HERE
 except Exception as e:
