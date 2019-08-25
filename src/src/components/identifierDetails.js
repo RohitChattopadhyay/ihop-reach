@@ -18,6 +18,7 @@ class Links extends React.Component {
       ["hmdb"]: ["http://identifiers.org/hmdb/", "HMDB"],
       ["go"]: ["http://identifiers.org/go/", "GO"],
       ["interpro"]: ["http://identifiers.org/interpro/", "InterPro"],
+      ["mesh"]: ["http://identifiers.org/mesh/", "MeSH"],
       ["pfam"]: ["http://identifiers.org/pfam/", "Pfam"],
       ["pubchem"]: ["http://identifiers.org/pubchem.compound/", "PubChem"],
       ["taxonomy"]: ["http://identifiers.org/taxonomy/", "Taxonomy"],
