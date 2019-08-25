@@ -57,6 +57,13 @@ class SentenceView extends React.Component<Props> {
     )
     if (participants.length == 0) return null
     participants.forEach(participant => {
+      if(
+        !(participant.entity_text) ||
+        !(participant.entity_type) ||
+        !(participant.identifier)
+      )
+        return
+
       entityText = participant.entity_text
       entityType = participant.entity_type.split("_").join(" ")
       if (participant.identifier == identifier) {
