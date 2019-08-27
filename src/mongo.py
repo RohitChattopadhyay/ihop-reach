@@ -1,5 +1,4 @@
 import sys,os
-from multiprocessing import Process
 
 from os.path import join, getsize
 
@@ -40,8 +39,6 @@ sourceFile  = '/src/reach/inputFiles.txt'
 global destFile
 destFile = '/src/reach/filterFiles.txt'
 
-count = 0
-threads = []
 with open(sourceFile) as f:
     content = f.readlines()
     for line in content:
@@ -51,14 +48,4 @@ with open(sourceFile) as f:
         if fileExt != "nxml" and fileExt != "NXML":
             continue
         pmcID = fileComponents[0]
-        p = Process(target=isPmcPresent, args=(pmcID,line,))
-        p.start()
-        threads.append(p)
-        if len(threads)==10:
-            count += len(threads)
-            for thread in threads:
-                thread.join()
-            del threads[:]
-    for thread in threads:
-        count += len(threads)
-        thread.join()
+        isPmcPresent(pmcID,line)
