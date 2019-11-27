@@ -4,7 +4,8 @@ console.log("GraphQL",graphQL_API)
 console.log("MongoDB",mongodbSRV)
 module.exports = {
   siteMetadata:{
-    title: "Reach"
+    title: "Reach",
+    siteUrl: "https://reach.nrnb-docker.ucsd.edu",
   },
   plugins: [
     `gatsby-plugin-flow`,
@@ -91,6 +92,13 @@ module.exports = {
             handler: `staleWhileRevalidate`,
           },
         ]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        // Spliting sitemap, 5000 max per sitemap
+        sitemapSize: 5000,
       }
     }
   ],

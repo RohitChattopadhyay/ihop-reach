@@ -1,1 +1,3 @@
 /graphiql/*
+*.lock*
+*lock.json*
