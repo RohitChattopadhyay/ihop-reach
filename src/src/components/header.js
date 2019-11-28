@@ -92,7 +92,7 @@ class Header extends React.Component {
             this.setState({
               searchMsg: "No Results Found",
               searching: false,
-              showTypeAhead: true,
+              showTypeAhead: false,
               typeahead: [],
             })
             break
@@ -282,6 +282,7 @@ class Header extends React.Component {
                     style={{
                       border: "1px solid #ecf0f1",
                       boxShadow: "0 4px 6px 0 rgba(32,33,36,0.28)",
+                      top: 0
                     }}
                   >
                     {this.typeAheadDisplayer()}
