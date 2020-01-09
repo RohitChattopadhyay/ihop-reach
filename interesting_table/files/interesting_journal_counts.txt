@@ -1,0 +1,864 @@
+journal	count
+PLoS ONE	3507
+The Journal of Cell Biology	876
+Nucleic Acids Research	532
+Molecular Biology of the Cell	400
+The Journal of Experimental Medicine	344
+PLoS Pathogens	339
+PLoS Genetics	326
+Cell Death &amp; Disease	239
+Oncotarget	238
+The Journal of Biological Chemistry	238
+Molecular Cancer	227
+Diabetes	225
+Oncogene	217
+International Journal of Molecular Sciences	183
+PLoS Biology	153
+BMC Cancer	151
+Journal of Cellular and Molecular Medicine	136
+British Journal of Cancer	122
+eLife	118
+Frontiers in Immunology	116
+Scientific Reports	116
+Nature Communications	107
+Journal of Neuroinflammation	102
+Arthritis Research &amp; Therapy	99
+Evidence-based Complementary and Alternative Medicine : eCAM	98
+Breast Cancer Research : BCR	96
+Mediators of Inflammation	94
+Cell Communication and Signaling : CCS	93
+Acta Pharmacologica Sinica	92
+BioMed Research International	91
+Retrovirology	66
+Frontiers in Oncology	60
+The EMBO Journal	59
+Biochemical Journal	58
+EMBO Molecular Medicine	57
+PPAR Research	57
+Nature immunology	56
+Respiratory Research	55
+BMC Cell Biology	53
+International Journal of Biological Sciences	50
+Journal of Biomedicine and Biotechnology	50
+Viruses	50
+Nature communications	49
+Cancers	47
+Oxidative Medicine and Cellular Longevity	47
+PLoS Computational Biology	46
+The Journal of General Physiology	46
+Frontiers in Physiology	45
+Journal of Molecular Signaling	45
+Nature cell biology	44
+Journal of Biomedical Science	43
+Cellular and Molecular Life Sciences	41
+Frontiers in Endocrinology	41
+BMC Molecular Biology	40
+Frontiers in Genetics	39
+Frontiers in Plant Science	38
+Molecular Vision	36
+Frontiers in Cellular Neuroscience	35
+Frontiers in Pharmacology	35
+Journal of Translational Medicine	35
+Frontiers in Molecular Neuroscience	34
+Molecular Neurodegeneration	34
+Molecular Pain	34
+BMC Immunology	32
+Cell Division	32
+Experimental &amp; Molecular Medicine	32
+Nature structural &amp; molecular biology	32
+Journal of Inflammation (London, England)	31
+Journal of Signal Transduction	31
+Nature neuroscience	31
+BMC Complementary and Alternative Medicine	30
+BMC Neuroscience	30
+Molecular Systems Biology	29
+Biomolecules &amp; Therapeutics	28
+Frontiers in Microbiology	28
+JAK-STAT	28
+Nature	28
+Virology Journal	28
+Cardiovascular Diabetology	27
+Journal of Experimental Botany	27
+Physiological Reports	27
+Cancer Cell International	26
+Cells	26
+Molecular Cell	26
+Aging (Albany NY)	25
+BMC Biochemistry	25
+International Journal of Oncology	25
+Cell Research	24
+Drug Design, Development and Therapy	24
+Molecular Brain	24
+Oncogenesis	24
+BMC Genomics	23
+Cell Cycle	23
+Clinical Epigenetics	23
+Human Molecular Genetics	23
+BMC Biology	22
+Environmental Health Perspectives	22
+Frontiers in Neuroscience	22
+International Journal of Cell Biology	22
+Journal of Oncology	22
+Open Biology	22
+Pharmaceuticals	22
+Journal of Cell Science	21
+Journal of Experimental &amp; Clinical Cancer Research : CR	21
+Lipids in Health and Disease	21
+Nature medicine	21
+BMC Systems Biology	20
+Cell &amp; Bioscience	20
+Epigenetics &amp; Chromatin	20
+Journal of Hematology &amp; Oncology	20
+Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease	20
+mBio	20
+Toxins	20
+Experimental Diabetes Research	19
+Purinergic Signalling	19
+Biology Open	18
+Current Neuropharmacology	18
+BMC Plant Biology	17
+Cell Death and Differentiation	17
+Genome Biology	17
+Nature chemical biology	17
+Redox Biology	17
+The Scientific World Journal	17
+BMC Microbiology	16
+FEBS Open Bio	16
+Genes &amp; Cancer	16
+Molecular Metabolism	16
+Nutrients	16
+Biochimica et Biophysica Acta	15
+British Journal of Pharmacology	15
+Cardiovascular Research	15
+Biochemistry	14
+BMC Developmental Biology	14
+International Journal of Endocrinology	14
+Leukemia	14
+Marine Drugs	14
+Proceedings of the Japan Academy. Series B, Physical and Biological Sciences	14
+Reproductive Biology and Endocrinology : RB&amp;E	14
+Bioscience Reports	13
+BMB Reports	13
+Frontiers in Aging Neuroscience	13
+International Journal of Alzheimer's Disease	13
+International Journal of Molecular Medicine	13
+Molecular Microbiology	13
+Nutrition &amp; Metabolism	13
+Biomolecules	12
+Blood Cancer Journal	12
+Breast Cancer Research	12
+Cell	12
+Chinese Journal of Cancer	12
+Diabetologia	12
+Disease Models &amp; Mechanisms	12
+Epigenetics	12
+Fibrogenesis &amp; Tissue Repair	12
+Genetics	12
+Journal of Korean Medical Science	12
+Laboratory investigation; a journal of technical methods and pathology	12
+Molecules and Cells	12
+Mucosal immunology	12
+Nuclear Receptor Signaling	12
+OncoTargets and therapy	12
+Scientifica	12
+Biology	11
+Carcinogenesis	11
+Cellular Signalling	11
+Clinical and Developmental Immunology	11
+Journal of Bone and Mineral Research	11
+Journal of Clinical Biochemistry and Nutrition	11
+Journal of Diabetes Research	11
+Molecular Medicine Reports	11
+Oncology Letters	11
+Protein &amp; Cell	11
+Aging Cell	10
+Cell reports	10
+Developmental Cell	10
+Gastroenterology Research and Practice	10
+Genes	10
+Immune Network	10
+Journal of Cell Communication and Signaling	10
+Journal of Lipid Research	10
+Kidney international	10
+Neural Plasticity	10
+Skeletal Muscle	10
+Cell death and differentiation	9
+Cell Metabolism	9
+Current Biology	9
+Current Genomics	9
+Frontiers in Cellular and Infection Microbiology	9
+Frontiers in Neuroanatomy	9
+Journal of Immunology Research	9
+Molecular Biology International	9
+ASN NEURO	8
+Basic Research in Cardiology	8
+Biochemistry Research International	8
+Brazilian Journal of Medical and Biological Research	8
+Cellular and Molecular Life Sciences 	8
+Frontiers in Behavioral Neuroscience	8
+Frontiers in Psychiatry	8
+Immunity	8
+International Journal of Chronic Obstructive Pulmonary Disease	8
+Journal of Diabetes Investigation	8
+Journal of Molecular Medicine (Berlin, Germany)	8
+Molecular &amp; Cellular Proteomics : MCP	8
+Neural Development	8
+Oncoscience	8
+Pflugers Archiv	8
+Pulmonary Circulation	8
+SpringerPlus	8
+The Journal of Endocrinology	8
+Apoptosis	7
+BMC Gastroenterology	7
+Cancer Medicine	7
+European Journal of Immunology	7
+International Journal of Medical Sciences	7
+Journal of Cancer	7
+Journal of Ovarian Research	7
+Neural Regeneration Research	7
+Neuron	7
+Particle and Fibre Toxicology	7
+PLoS Neglected Tropical Diseases	7
+Stem Cell Research &amp; Therapy	7
+The FASEB Journal	7
+The Journal of investigative dermatology	7
+The Open Biochemistry Journal	7
+Vascular Health and Risk Management	7
+Acta Neuropathologica	6
+Arthritis Research	6
+BMC Medicine	6
+BMC Pharmacology	6
+Cellular Logistics	6
+Chemical Reviews	6
+Clinical Science (London, England : 1979)	6
+Critical Care	6
+Current Pharmaceutical Design	6
+Development (Cambridge, England)	6
+Dialogues in Clinical Neuroscience	6
+Experimental and Therapeutic Medicine	6
+G3: Genes|Genomes|Genetics	6
+Gene Regulation and Systems Biology	6
+Journal of Allergy	6
+Journal of Biomedical Research	6
+Journal of Lipids	6
+Journal of Molecular and Cellular Cardiology	6
+Journal of Nucleic Acids	6
+Membranes	6
+Molecular and Cellular Biology	6
+Molecular Psychiatry	6
+PLoS Medicine	6
+Stem Cells (Dayton, Ohio)	6
+Autophagy	5
+Cancer Biology &amp; Medicine	5
+Cancer Biology &amp; Therapy	5
+Cancer Metastasis Reviews	5
+Cell Host &amp; Microbe	5
+Cell Reports	5
+Chinese Medicine	5
+Chromosoma	5
+Diabetes &amp; Metabolism Journal	5
+Enzyme Research	5
+Frontiers in Cell and Developmental Biology	5
+Frontiers in plant science	5
+Genes to Cells	5
+International Journal of Hypertension	5
+International Journal of Inflammation	5
+Journal of Amino Acids	5
+Journal of Carcinogenesis	5
+Journal of Ginseng Research	5
+Journal of Inflammation Research	5
+Journal of Molecular Endocrinology	5
+Journal of Thrombosis and Haemostasis	5
+Molecular Neurobiology	5
+Oncology Reports	5
+Parkinson's Disease	5
+PeerJ	5
+Pharmacology Research &amp; Perspectives	5
+Plant and Cell Physiology	5
+Radiation Oncology (London, England)	5
+Reproductive biology and endocrinology : RB&amp;E	5
+The Febs Journal	5
+The Journal of General Virology	5
+The Korean Journal of Physiology &amp; Pharmacology : Official Journal of the Korean Physiological Society and the Korean Society of Pharmacology	5
+The Open Rheumatology Journal	5
+The Plant Journal	5
+Theoretical Biology &amp; Medical Modelling	5
+Tissue Barriers	5
+Translational Psychiatry	5
+Tumour Biology	5
+Acta Naturae	4
+Alcohol Research : Current Reviews	4
+Allergy, Asthma &amp; Immunology Research	4
+American Journal of Physiology - Lung Cellular and Molecular Physiology	4
+Biochemical Pharmacology	4
+Biologics : Targets &amp; Therapy	4
+BMC Research Notes	4
+Cancer Immunology, Immunotherapy	4
+Cancer Research and Treatment : Official Journal of Korean Cancer Association	4
+Cell Biochemistry and Biophysics	4
+Cell communication and signaling : CCS	4
+Current Medicinal Chemistry	4
+Experimental Hematology &amp; Oncology	4
+Experimental Neurobiology	4
+Free Radical Biology &amp; Medicine	4
+Gut	4
+Gut and Liver	4
+Histochemistry and Cell Biology	4
+Immunology and Cell Biology	4
+International Journal of Hepatology	4
+International Journal of Nanomedicine	4
+Investigational New Drugs	4
+ISRN Oncology	4
+Journal of Cancer Prevention	4
+Journal of Cellular Physiology	4
+Journal of Extracellular Vesicles	4
+Journal of Neurochemistry	4
+Neuropsychiatric Disease and Treatment	4
+Oncoimmunology	4
+Reproductive Biology and Endocrinology	4
+Sarcoma	4
+Sensors (Basel, Switzerland)	4
+Stem Cell Reports	4
+The Korean Journal of Internal Medicine	4
+The Open Virology Journal	4
+Theranostics	4
+Therapeutics and Clinical Risk Management	4
+Translational Oncogenomics	4
+United European Gastroenterology Journal	4
+Upsala Journal of Medical Sciences	4
+Yonsei Medical Journal	4
+Advances in Virology	3
+American Journal of Physiology - Endocrinology and Metabolism	3
+Angiogenesis	3
+Archives of Toxicology	3
+Biochemical and Biophysical Research Communications	3
+BMC Bioinformatics	3
+BMC Genetics	3
+BMC Medical Genomics	3
+BMC Nephrology	3
+BMC Pulmonary Medicine	3
+BMC Structural Biology	3
+BMC Urology	3
+Brain and Behavior	3
+Brain Sciences	3
+Breast Cancer : Basic and Clinical Research	3
+Breast cancer research : BCR	3
+Cancer Management and Research	3
+Cell Adhesion &amp; Migration	3
+Cell and Tissue Research	3
+Cell Communication and Signaling	3
+Cell research	3
+Cellular Microbiology	3
+Channels	3
+Clinical and Experimental Gastroenterology	3
+Clinical and Experimental Otorhinolaryngology	3
+Clinical Medicine Insights. Oncology	3
+Critical Reviews in Biochemistry and Molecular Biology	3
+Current Cardiology Reviews	3
+Cytoskeleton (Hoboken, N.j.)	3
+Diabetes, Metabolic Syndrome and Obesity: Targets and Therapy	3
+Diabetes, Obesity &amp; Metabolism	3
+EMBO Reports	3
+Endocrine-Related Cancer	3
+Endocrinology	3
+European Journal of Nutrition	3
+F1000Prime Reports	3
+F1000Research	3
+Febs Letters	3
+Fems Microbiology Reviews	3
+Frontiers in Chemistry	3
+Frontiers in Neural Circuits	3
+Frontiers in Neurology	3
+Hepatology (Baltimore, Md.)	3
+Immunological Reviews	3
+Indian Journal of Pharmacology	3
+International Journal of Peptides	3
+International Journal of Vascular Medicine	3
+ISRN Hematology	3
+ISRN Inflammation	3
+ISRN Neurology	3
+ISRN Pharmacology	3
+Journal of Bone Metabolism	3
+Journal of Cachexia, Sarcopenia and Muscle	3
+Journal of clinical &amp; cellular immunology	3
+Journal of Histochemistry and Cytochemistry	3
+Journal of Leukocyte Biology	3
+Journal of Ophthalmology	3
+Journal of Thyroid Research	3
+Journal of Toxicology	3
+Kidney International	3
+Microbiology	3
+Molecular and Cellular Biochemistry	3
+Molecular and Cellular Endocrinology	3
+Molecular Biology Reports	3
+Molecular Endocrinology	3
+Nephrology Dialysis Transplantation	3
+Nutrition Research and Practice	3
+Pharmacology &amp; Therapeutics	3
+Plant Molecular Biology	3
+Small GTPases	3
+Stem Cells International	3
+Surgical Neurology International	3
+Traffic (Copenhagen, Denmark)	3
+Tuberculosis and Respiratory Diseases	3
+Vascular Cell	3
+Virulence	3
+World Journal of Surgical Oncology	3
+Adipocyte	2
+Advances in Hematology	2
+Advances in Pharmacological Sciences	2
+Allergy	2
+Allergy, Asthma, and Clinical Immunology : Official Journal of the Canadian Society of Allergy and Clinical Immunology	2
+American Journal of Physiology - Gastrointestinal and Liver Physiology	2
+American Journal of Physiology - Renal Physiology	2
+Amino Acids	2
+Anatomy &amp; Cell Biology	2
+Annals of Clinical and Translational Neurology	2
+Annals of Medicine	2
+Annals of the New York Academy of Sciences	2
+Annals of the Rheumatic Diseases	2
+Antioxidants &amp; Redox Signaling	2
+Atherosclerosis	2
+Autoimmune Diseases	2
+Bioarchitecture	2
+Biochemical pharmacology	2
+Biochimie	2
+Biomarker Insights	2
+BMC Biotechnology	2
+BMC Veterinary Research	2
+Cancer &amp; Metabolism	2
+Cancer Microenvironment	2
+Cardiovascular Drugs and Therapy	2
+Cellular physiology and biochemistry : international journal of experimental cellular physiology, biochemistry, and pharmacology	2
+Chemotherapy Research and Practice	2
+Cholesterol	2
+Clinical and molecular allergy : CMA	2
+Current HIV Research	2
+Current Molecular Medicine	2
+Current Protein &amp; Peptide Science	2
+Diabetes Care	2
+Diabetology &amp; Metabolic Syndrome	2
+Disease Markers	2
+DNA Research: An International Journal for Rapid Publication of Reports on Genes and Genomes	2
+European Heart Journal	2
+European Journal of Medical Research	2
+Experimental Dermatology	2
+Frontiers in Integrative Neuroscience	2
+Frontiers in Pediatrics	2
+Frontiers in Psychology	2
+Frontiers in Synaptic Neuroscience	2
+Frontiers in Systems Neuroscience	2
+Gene therapy	2
+Genome Integrity	2
+Genome Medicine	2
+Glycobiology	2
+Hepatic Medicine : Evidence and Research	2
+Herpesviridae	2
+Hormones &amp; Cancer	2
+Immunity &amp; ageing : I &amp; A	2
+Immunology and cell biology	2
+Infectious Agents and Cancer	2
+Inflammation Research	2
+Intensive Care Medicine	2
+International Immunopharmacology	2
+International Journal of Breast Cancer	2
+International Journal of Cancer. Journal International du Cancer	2
+International Journal of Genomics	2
+International Journal of Hematology-Oncology and Stem Cell Research	2
+International Journal of Nephrology	2
+International Journal of Proteomics	2
+International Reviews of Immunology	2
+Iranian Journal of Pharmaceutical Research : IJPR	2
+JNCI Journal of the National Cancer Institute	2
+Journal of Angiogenesis Research	2
+Journal of Animal Science and Biotechnology	2
+Journal of Asthma and Allergy	2
+Journal of Biology	2
+Journal of Circadian Rhythms	2
+Journal of Clinical Immunology	2
+Journal of Insect Science	2
+Journal of Medical Genetics	2
+Journal of Medicinal Chemistry	2
+Journal of Menopausal Medicine	2
+Journal of Molecular Biology	2
+Journal of Muscle Research and Cell Motility	2
+Journal of Neuro-Oncology	2
+Journal of Neuroendocrinology	2
+Journal of Neuroimmune Pharmacology	2
+Journal of Ophthalmic &amp; Vision Research	2
+Journal of Traditional and Complementary Medicine	2
+Journal of Tropical Medicine	2
+Medical Gas Research	2
+Medical Science Monitor : International Medical Journal of Experimental and Clinical Research	2
+Mediterranean Journal of Hematology and Infectious Diseases	2
+MicrobiologyOpen	2
+Molecular and Cellular Neurosciences	2
+Molecular psychiatry	2
+Mucosal Immunology	2
+Multiple Sclerosis (Houndmills, Basingstoke, England)	2
+Nature genetics	2
+Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology	2
+Nuclear Receptor	2
+Nucleus	2
+Nutrition Journal	2
+Obesity (Silver Spring, Md.)	2
+Open biology	2
+Pathobiology of Aging &amp; Age Related Diseases	2
+Pathogens	2
+Pathology Research International	2
+Pflugers Archiv 	2
+Planta	2
+Progress in Neurobiology	2
+Prostate Cancer	2
+Proteome Science	2
+Seminars in Immunopathology	2
+Silence	2
+Structure(London, England:1993)	2
+The Journal of Allergy and Clinical Immunology	2
+The Journal of Clinical Endocrinology and Metabolism	2
+The Journal of Immunology Author Choice	2
+The Journal of Membrane Biology	2
+The Journal of Pathology	2
+The Journal of Physiology	2
+The Plant Journal 	2
+The World Allergy Organization Journal	2
+Toxicological Research	2
+Translational Neurodegeneration	2
+Veterinary Research	2
+ACS Chemical Biology	1
+ACS Chemical Neuroscience	1
+Acta Diabetologica	1
+Acta Histochemica et Cytochemica	1
+Acta Neuropathologica Communications	1
+Advanced Biomedical Research	1
+Advances in Biological Regulation	1
+Advances in bioscience and biotechnology (Print)	1
+Advances in Dermatology and Allergology/Postȩpy Dermatologii i Alergologii	1
+Aging	1
+AIDS Research and Therapy	1
+Alcohol Research &amp; Health	1
+Alcoholism, Clinical and Experimental Research	1
+Alzheimer's Research &amp; Therapy	1
+American Journal of Hematology	1
+American Journal of Physiology - Cell Physiology	1
+American Journal of Physiology - Heart and Circulatory Physiology	1
+American Journal of Physiology. Renal Physiology	1
+American Journal of Reproductive Immunology	1
+American Journal of Transplantation	1
+Anatomy Research International	1
+Anemia	1
+Annals of Biomedical Engineering	1
+Annals of Dermatology	1
+Annals of Surgical Treatment and Research	1
+Annual research &amp; review in biology	1
+Anti-Cancer Agents in Medicinal Chemistry	1
+AoB Plants	1
+Archives of Dermatological Research	1
+Arthritis	1
+Arthritis &amp; Rheumatology (Hoboken, N.j.)	1
+Arthritis and Rheumatism	1
+Asian-Australasian Journal of Animal Sciences	1
+Autoimmunity	1
+Biochemical Society Transactions	1
+Biochemistry Insights	1
+Bioinformation	1
+Biological Procedures Online	1
+Biological Research	1
+Biological Reviews of the Cambridge Philosophical Society	1
+Biology Direct	1
+Biology of Mood &amp; Anxiety Disorders	1
+Biology of Sex Differences	1
+Biomacromolecules	1
+Biomarker Research	1
+Biomarkers in Cancer	1
+BioMedicine	1
+Biotechnology Advances	1
+Biotechnology Letters	1
+Birth Defects Research. Part A, Clinical and Molecular Teratology	1
+BMC Anesthesiology	1
+BMC Chemical Biology	1
+BMC Clinical Pathology	1
+BMC Dermatology	1
+BMC Endocrine Disorders	1
+BMC Evolutionary Biology	1
+BMC Musculoskeletal Disorders	1
+BMC Ophthalmology	1
+BMC Pediatrics	1
+BMC Pharmacology &amp; Toxicology	1
+BMC Physiology	1
+BMJ Open	1
+Bone	1
+Bone Marrow Research	1
+Brain	1
+Brain disorders &amp; therapy	1
+Brain Tumor Research and Treatment	1
+Breast Cancer : Targets and Therapy	1
+Briefings in Functional Genomics	1
+British Journal of Clinical Pharmacology	1
+British Journal of Haematology	1
+Cancer Cell	1
+Cancer gene therapy	1
+Cancer Growth and Metastasis	1
+Cardiovascular Psychiatry and Neurology	1
+Cell &amp; Chromosome	1
+Cell Biology and Toxicology	1
+Cell Journal (Yakhteh)	1
+Cell Stem Cell	1
+Cellular and Molecular Bioengineering	1
+Cellular and Molecular Immunology	1
+Cerebral Cortex (New York, NY)	1
+Chemical Research in Toxicology	1
+Chemistry &amp; Biology	1
+Chemistry Central Journal	1
+Chonnam Medical Journal	1
+Cilia	1
+Clinical &amp; Experimental Metastasis	1
+Clinical and Experimental Reproductive Medicine	1
+Clinical and Translational Gastroenterology	1
+Clinical Interventions in Aging	1
+Clinical Medicine. Oncology	1
+Clinical Psychopharmacology and Neuroscience	1
+Clinics (Sao Paulo, Brazil)	1
+Clinics in Liver Disease	1
+CNS Neuroscience &amp; Therapeutics	1
+Colombia Médica : CM	1
+Communicative &amp; Integrative Biology	1
+Comparative and Functional Genomics	1
+Comparative Hepatology	1
+Computational and Structural Biotechnology Journal	1
+Contemporary Oncology	1
+Critical Care Research and Practice	1
+Current Alzheimer Research	1
+Current Drug Targets	1
+Current Gerontology and Geriatrics Research	1
+Current Nutrition Reports	1
+Current Opinion in Cell Biology	1
+Current Opinion in Genetics &amp; Development	1
+Current Opinion in Lipidology	1
+Current Pathobiology Reports	1
+Current Rheumatology Reports	1
+Current Signal Transduction Therapy	1
+Cytokine &amp; Growth Factor Reviews	1
+Database: The Journal of Biological Databases and Curation	1
+Dermato-endocrinology	1
+Dermatology Research and Practice	1
+Development &amp; Reproduction	1
+Developmental Biology	1
+Diagnostic Pathology	1
+DNA Repair	1
+Drug Target Insights	1
+Drugs in R&amp;D	1
+EBioMedicine	1
+Emerging Microbes &amp; Infections	1
+Endocrine	1
+Endocrine Connections	1
+Endocrinology and Metabolism	1
+Environmental and Molecular Mutagenesis	1
+Environmental Health	1
+Epigenomics	1
+European Journal of Applied Physiology	1
+European Journal of Haematology	1
+European Journal of Pediatrics	1
+European Journal of Pharmacology	1
+Experimental Brain Research. Experimentelle Hirnforschung. Experimentation Cerebrale	1
+Experimental Cell Research	1
+Experimental Lung Research	1
+Experimental Neurology	1
+Fibrogenesis and Tissue Repair	1
+Frontiers in Computational Neuroscience	1
+Frontiers in Molecular Biosciences	1
+Frontiers in Neuroenergetics	1
+Future oncology (London, England)	1
+Gastric Cancer	1
+Gene technology	1
+Gene Therapy	1
+Genes &amp; Diseases	1
+Genes &amp; Nutrition	1
+Genes and immunity	1
+Genes, Brain, and Behavior	1
+Genetics Research International	1
+Genomics &amp; Informatics	1
+Glia	1
+Global Advances in Health and Medicine	1
+Global Cardiology Science &amp; Practice	1
+Graefe's Archive for Clinical and Experimental Ophthalmology	1
+Growth Factors (Chur, Switzerland)	1
+Gut Microbes	1
+Gut Pathogens	1
+Gynecologic Oncology	1
+Heart International	1
+Hematology Reviews	1
+Hippocampus	1
+Human Genetics	1
+Human Reproduction (Oxford, England)	1
+Human Reproduction Update	1
+Immune Network : Official Journal of the Korean Society for Immunology and Biological Response Modifiers	1
+Immunity &amp; Ageing	1
+Immunity, Inflammation and Disease	1
+Immunologic Research	1
+Immunology	1
+Immunology Letters	1
+Indian Journal of Endocrinology and Metabolism	1
+Infectious Disease Reports	1
+Inflammatory Bowel Diseases	1
+Integrated blood pressure control	1
+International Immunology	1
+International Journal of Biomedical Science : IJBS	1
+International Journal of Cardiology	1
+International Journal of Medical Microbiology	1
+International Journal of Nephrology and Renovascular Disease	1
+Iranian Journal of Basic Medical Sciences	1
+Iranian Journal of Neurology	1
+Islets	1
+ISRN Allergy	1
+ISRN Biochemistry	1
+ISRN Dermatology	1
+ISRN Endocrinology	1
+ISRN Nephrology	1
+ISRN Ophthalmology	1
+Iubmb Life	1
+Journal of Aging Research	1
+Journal of Autoimmunity	1
+Journal of Bacteriology	1
+Journal of biomedical science and engineering	1
+Journal of Biophysics	1
+Journal of blood medicine	1
+Journal of cancer science &amp; therapy	1
+Journal of cancer therapy	1
+Journal of carcinogenesis &amp; mutagenesis	1
+Journal of Cardiovascular Disease Research	1
+Journal of Clinical Neurology (Seoul, Korea)	1
+Journal of diabetes &amp; metabolism	1
+Journal of Drug Delivery	1
+Journal of Ethnopharmacology	1
+Journal of Exercise Nutrition &amp; Biochemistry	1
+Journal of Gastric Cancer	1
+Journal of Gastroenterology	1
+Journal of genetic syndromes &amp; gene therapy	1
+Journal of Genomics	1
+Journal of Hematology and Oncology	1
+Journal of inflammation research	1
+Journal of Intensive Care	1
+Journal of leukemia (Los Angeles, Calif.)	1
+Journal of Molecular Cell Biology	1
+Journal of Molecular Neuroscience	1
+Journal of Molecular Recognition	1
+Journal of Nanobiotechnology	1
+Journal of Negative Results in Biomedicine	1
+Journal of Neurogastroenterology and Motility	1
+Journal of neuroimmunology	1
+Journal of Nutrition and Metabolism	1
+Journal of Nutritional &amp; Environmental Medicine	1
+Journal of Nutritional Science	1
+Journal of Obesity	1
+Journal of Occupational Medicine and Toxicology (London, England)	1
+Journal of Ocular Biology, Diseases, and Informatics	1
+Journal of Oral Microbiology	1
+Journal of Parasitology Research	1
+Journal of Periodontal &amp; Implant Science	1
+Journal of Pharmacopuncture	1
+Journal of Preventive Medicine and Public Health	1
+Journal of Proteome Research	1
+Journal of Radiation Research	1
+Journal of Research in Medical Sciences : The Official Journal of Isfahan University of Medical Sciences	1
+Journal of Skin Cancer	1
+Journal of Stem Cells &amp; Regenerative Medicine	1
+Journal of Surgical Oncology	1
+Journal of the American Chemical Society	1
+Journal of the International Society of Sports Nutrition	1
+Journal of Thoracic Oncology	1
+Journal of Transplantation	1
+Journal of Veterinary Emergency and Critical Care	1
+Journal of Veterinary Science	1
+Journal of Viral Hepatitis	1
+Journal of Virology	1
+Korean Diabetes Journal	1
+Korean Journal of Anesthesiology	1
+Leukemia Research and Treatment	1
+Lipids	1
+Liver International 	1
+mAbs	1
+Malaria Journal	1
+Matrix Biology	1
+Medical Hypothesis, Discovery and Innovation in Ophthalmology	1
+Medical Microbiology and Immunology	1
+Medical Science Monitor Basic Research	1
+Metabolites	1
+Microbial biotechnology	1
+Microbial Cell Factories	1
+Molecular Aspects of Medicine	1
+Molecular Autism	1
+Molecular biology	1
+Molecular Biosystems	1
+Molecular Genetics and Genomics	1
+Molecular Human Reproduction	1
+Molecular Immunology	1
+Molecular Plant	1
+Molecular Therapy	1
+Molecular Therapy. Methods &amp; Clinical Development	1
+Molecular Therapy. Nucleic Acids	1
+Molecules	1
+Mycobiology	1
+Naunyn-Schmiedeberg's Archives of Pharmacology	1
+Nephron. Experimental Nephrology	1
+Neuro-Oncology	1
+Neuro-Signals	1
+Neurobiology of Aging	1
+Neurochemical Research	1
+Neuropsychopharmacology	1
+Neuroscience	1
+Neuroscience Letters	1
+Neurotoxicity Research	1
+Nutrition &amp; Diabetes	1
+Oncology Reviews	1
+Organogenesis	1
+Parasites &amp; Vectors	1
+PathoGenetics	1
+Perspectives in Medicinal Chemistry	1
+Pharmaceutical Research	1
+Pharmaceutics	1
+Pharmacognosy Magazine	1
+Pharmacology &amp; therapeutics	1
+Physiology	1
+Pigment Cell &amp; Melanoma Research	1
+Plant Cell Reports	1
+Plant Methods	1
+Plant Signaling &amp; Behavior	1
+Postgraduate Medical Journal	1
+Progress in Retinal and Eye Research	1
+Psychiatry Investigation	1
+Pulmonary Medicine	1
+Rambam Maimonides Medical Journal	1
+Recent Patents on Anti-Cancer Drug Discovery	1
+Reviews in Medical Virology	1
+Rheumatology (Sunnyvale, Calif.)	1
+RNA Biology	1
+Scandinavian Journal of Immunology	1
+Schizophrenia Bulletin	1
+Science (New York, N.Y.)	1
+Seminars in Cell &amp; Developmental Biology	1
+Shanghai Archives of Psychiatry	1
+Stroke Research and Treatment	1
+Studies in Mycology	1
+The American Journal of Clinical Nutrition	1
+The Canadian Journal of Infectious Diseases &amp; Medical Microbiology	1
+The European Journal of Neuroscience	1
+The Indian Journal of Medical Research	1
+The Journal of Physiological Sciences	1
+The Journal of Reproduction and Development	1
+The Journal of Steroid Biochemistry and Molecular Biology	1
+The Journal of Thoracic and Cardiovascular Surgery	1
+The Korean Journal of Hematology	1
+The Open Dentistry Journal	1
+The Plant Pathology Journal	1
+Thorax	1
+Toxicological Sciences	1
+Translational Respiratory Medicine	1
+Tremor and Other Hyperkinetic Movements	1
+Trends in Cell Biology	1
+Trends in Immunology	1
+Trends in Molecular Medicine	1
+Trends in Neurosciences	1
+Trends in Pharmacological Sciences	1
+Wiley Interdisciplinary Reviews. Developmental Biology	1
+Wormbook	1
