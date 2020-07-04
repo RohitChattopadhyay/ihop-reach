@@ -18,7 +18,7 @@ export default function DetailsTemplate({ data }) {
   let entityType = data.mongodbIhopIdentifierMapping.typ
   data = data.ihop.documentsByIdentifier
   return (
-    <Layout>
+    <Layout entity_name={entityName} entity_id={searchID} keywords={synonyms}>
       <div className="container my-4">
         <div>
           <h1 className="display-4 w-100">
@@ -35,11 +35,19 @@ export default function DetailsTemplate({ data }) {
           </table>
         </div>
         <div className={style.sentenceContainer}>
-          <p className="lead">
-            Sentences in this view contain interactions of&nbsp;
-            <b>{entityName}</b>
-          </p>
-          <hr />
+          <div className="row">
+            <div className="col-sm-11">
+              <p className="lead">
+                Sentences in this view contain interactions of&nbsp;
+                <em>{entityName}</em>
+              </p>
+            </div>
+            <div className="col-sm-1 text-right" title="See how to Interpreting Search Results">
+              <a href="/#interpret_result:~:text=Interpreting%20Search%20Results" target="_blank" rel="noopener">
+                Help❔
+              </a>
+            </div>
+          </div>
           <SentenceView data={data} identifier={searchID} className={null} />
         </div>
       </div>

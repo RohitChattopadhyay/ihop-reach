@@ -11,7 +11,7 @@ import LayoutStyles from "../assets/styles/layout.module.scss"
 const Layout = props => {
   return (
     <div className={LayoutStyles.container}>
-      <Head />
+      <Head entity_name={props.entity_name} entity_id={props.entity_id} keywords={props.keywords} />
       <div className={LayoutStyles.content}>
         <Header />
         <div className={"container"}>{props.children}</div>

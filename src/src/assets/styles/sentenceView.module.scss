@@ -1,21 +1,30 @@
 .sentence-table {
-    table-layout: initial;
-    width: 100%;
-    tr {
-        th {
-            white-space: nowrap;
-            display: inline;
-            margin-right: 0.5em;
-            font-weight: normal;
-        }
-        td  {
-            width: 100%
-        }
+  table-layout: initial;
+  width: 100%;
+  tr {
+    th {
+      white-space: nowrap;
+      display: none;
+      margin-right: 0.5em;
+      font-weight: normal;
+      i {
+        display: inline;
+      }
     }
+    td {
+      width: 100%;
+    }
+  }
 }
 
-.mobile-Sentence-View{
-    span {
-        margin-right: 1em
-    }
+.mobile-Sentence-View {
+  span {
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-header {
+    display: none;
+  }
 }

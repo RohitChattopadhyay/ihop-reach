@@ -42,6 +42,16 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
+  
+        {/* Interpreting Search Results block */}
+        <div id="interpret_result">
+          <h1 className="display-4 w-100">Interpreting Search Results</h1>
+          <div>
+            <p className="lead">
+              TBA
+            </p>
+          </div>
+        </div>
       </div>
     </Layout>
   )

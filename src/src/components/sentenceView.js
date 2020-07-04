@@ -57,7 +57,7 @@ class SentenceView extends React.Component<Props> {
     )
     if (participants.length == 0) return null
     participants.forEach(participant => {
-      if(
+      if (
         !(participant.entity_text) ||
         !(participant.entity_type) ||
         !(participant.identifier)
@@ -90,29 +90,13 @@ class SentenceView extends React.Component<Props> {
     })
     return sentence
   }
-  setCookieOnPmcLinkClick = (id, sentence) => {
-    let cookieExpiry = new Date()
-    cookieExpiry.setTime(cookieExpiry.getTime() + 24 * 60 * 60 * 1000)
-    const cookie = new Cookies()
-    cookie.set(
-      "ihop-reach", // Cookie name
-      JSON.stringify({
-        pmc_id: id,
-        text: sentence,
-      }),
-      {
-        path: "/",
-        expires: cookieExpiry,
-        sameSite: "lax",
-      }
-    )
-  }
+
   filterFunction = obj => {
     const { pmc, hypo, negInfo, speciesInfo, search, year, title, sentence } = this.state
     let regx_pmc = new RegExp(pmc, "i")
     let regx_year = new RegExp(year, "i")
     let regx_title = new RegExp(title, "i")
-    let regx_sentence = new RegExp(sentence, "i")      
+    let regx_sentence = new RegExp(sentence, "i")
     return (
       (pmc != null ? obj.pmcid.search(regx_pmc) > -1 : true) &&
       (speciesInfo != null ? obj.species == speciesInfo : true) &&
@@ -151,38 +135,65 @@ class SentenceView extends React.Component<Props> {
         negInfo.value == "0" ? null : negInfo.value == "2" ? true : false,
     })
   }
+
+  generateTextFragment = text => {
+    // Populate text fragment in Full Text search for PMC journal
+    var searchText = "";
+    var words = [];
+    var temp_words = text.split(" ");
+    for (var idx = 0; idx < temp_words.length; idx++) {
+      if (!temp_words[idx].includes("XREF"))
+        words.push(temp_words[idx]);
+    }
+    if (words.length < 7)
+      searchText = encodeURIComponent(text);
+    else {
+      for (var idx = 0; idx < 6 && idx < words.length; idx++) {
+        searchText += " " + encodeURIComponent(words[idx]);
+      }
+      var secondLastWord = "";
+      if (words.length > 7)
+        secondLastWord = words[words.length - 2] + " ";
+      var lastWord = words[words.length - 1];
+      if (lastWord.endsWith("."))
+        lastWord = lastWord.substring(0, lastWord.length - 1)
+      searchText += "," + encodeURIComponent(secondLastWord + lastWord);
+    }
+    return searchText.trim()
+  }
+
   getOrgFromTaxonomy = identifier => {
     let name = "",
-      abb = " "
+      abv = " "
     let blank = true
     if (identifier != null && identifier.length > 0) {
       switch (identifier[0]) {
         case "taxonomy:9606":
           // Human
-          abb = "Hs\u00A0\u00A0"
+          abv = "Hs\u00A0\u00A0"
           name = "Human"
           blank = false
           break
         case "taxonomy:10090":
           // Mouse
-          abb = "Mm"
+          abv = "Mm"
           name = "Mouse"
           blank = false
           break
         case "taxonomy:4932":
           // Yeast
-          abb = "Sc\u00A0\u00A0"
+          abv = "Sc\u00A0\u00A0"
           name = "Yeast"
           blank = false
           break
         case "taxonomy:10116":
           // Rat
-          abb = "Rn\u00A0\u00A0"
+          abv = "Rn\u00A0\u00A0"
           name = "Rat"
           blank = false
           break
         default:
-          abb = " "
+          abv = " "
           name = ""
           break
       }
@@ -193,8 +204,8 @@ class SentenceView extends React.Component<Props> {
       )
     else
       return (
-        <small style={{ cursor: "default" }} title={name}>
-          {abb}
+        <small style={{ cursor: "default" }} title={"Organism: " + name}>
+          {abv}
         </small>
       )
   }
@@ -206,13 +217,13 @@ class SentenceView extends React.Component<Props> {
     documents.map(document => {
       //Fallback for verbose_text
       let sentArray = [];
-      if ("verbose_text" in document){
-        if(document.verbose_text != null && document.verbose_text.length>2)
+      if ("verbose_text" in document) {
+        if (document.verbose_text != null && document.verbose_text.length > 2)
           sentArray.push(document.verbose_text)
         else
           sentArray = document.evidence
       }
-      else 
+      else
         sentArray = document.evidence
 
       return sentArray.map(sentence => {
@@ -313,8 +324,8 @@ class SentenceView extends React.Component<Props> {
                     </optgroup>
                   </select>
                 </div>
-                <div className="col form-row">
-                  <div className="col-4">
+                <div className="col-sm-5 form-row">
+                  <div className="col">
                     <input
                       className="form-control form-control-sm"
                       type="text"
@@ -323,16 +334,16 @@ class SentenceView extends React.Component<Props> {
                       onChange={this.handleFilter}
                     />
                   </div>
-                  <div className="col-4">
+                  <div className="col">
                     <input
                       className="form-control form-control-sm"
                       type="text"
-                      placeholder="Title Search"
+                      placeholder="Journal Search"
                       ref="title"
                       onChange={this.handleFilter}
                     />
                   </div>
-                  <div className="col-4">
+                  <div className="col">
                     <input
                       className="form-control form-control-sm"
                       type="number"
@@ -344,114 +355,126 @@ class SentenceView extends React.Component<Props> {
                 </div>
               </div>
             </td>
-          </tr>
+          </tr> 
+          {dispArr.length > 0 && (
+            <tr className={[style.tableHeader,"border-top","pt-4"].join(" ")}>
+              <th></th>
+              <th>
+                <div className="row">
+                  <div className="col-sm-9 text-center">Sentence</div>
+                  <div className="col-sm-3">Journal Title</div>
+                </div>
+              </th>
+              <th title="Publication Year">
+                <div className="row">
+                  <div className="col-12">Year</div>
+                </div>
+              </th>
+            </tr>
+          )
+          }     
         </thead>
         <tbody
-          className={[this.props.className, style.sentenceTable,"w-100"].join(" ")}
+          className={[this.props.className, style.sentenceTable, "w-100"].join(" ")}
         >
           {dispArr.length == 0 ? (
             <tr>
               <th>No Results Found, please refine your filter.</th>
             </tr>
           ) : (
-            dispArr.map(obj => {
-              return (
-                <tr key={obj.html}>
-                  <th className="d-none d-sm-inline">
-                    <a
-                      title="Link to PMC"
-                      href={`https://www.ncbi.nlm.nih.gov/pmc/articles/PMC${
-                        obj.pmcid
-                      }?text=${encodeURIComponent(obj.sentence)}`}
-                      target="_blank"
-                      onClick={() =>
-                        this.setCookieOnPmcLinkClick(obj.pmcid, obj.sentence)
-                      }
-                    >
-                      <i className="fa fa-file-text-o" aria-hidden="true" />
-                    </a>
-                  </th>
-                  <th className="d-none d-sm-inline">
-                    {obj.hypothesis ? (
-                      <i
-                        title="True Hypothesis"
-                        className="fa fa-star-half-o"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <i
-                        title="False Hypothesis"
-                        className="fa fa-star invisible"
-                        aria-hidden="true"
-                      />
-                    )}
-                  </th>
-                  <th className="d-none d-sm-inline">
-                    {obj.negInfo ? (
-                      <i
-                        title="Negative Information"
-                        className="fa fa-minus-circle"
-                      />
-                    ) : (
-                      <i className="fa fa-minus-circle invisible" />
-                    )}
-                  </th>
-                  <th className="d-none d-sm-inline">
-                    {this.getOrgFromTaxonomy(obj.species)}
-                  </th>
-                  <td>
-                    <div className="row">
-                      <div className={"d-sm-none col-12 " + style.mobileSentenceView} >
-                        <span>
-                          <a
-                            title="Link to PMC"
-                            href={`https://www.ncbi.nlm.nih.gov/pmc/articles/PMC${
-                              obj.pmcid
-                            }?text=${encodeURIComponent(obj.sentence)}`}
-                            target="_blank"
-                            onClick={() =>
-                              this.setCookieOnPmcLinkClick(obj.pmcid, obj.sentence)
-                            }
-                          >
-                            <i className="fa fa-file-text-o" aria-hidden="true" />
-                          </a>
-                        </span>
-                        {obj.hypothesis ? (                            
-                        <span>
+              dispArr.map(obj => {
+                return (
+                  <tr key={obj.html}>
+                    <th className="d-none d-sm-inline">
+                      <a
+                        title="Link to Full-Text Article"
+                        href={`https://www.ncbi.nlm.nih.gov/pmc/articles/PMC${
+                          obj.pmcid
+                          }#:~:text=${this.generateTextFragment(obj.sentence)}`}
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <i className="fa fa-file-text-o" aria-hidden="true" />
+                      </a>
+                    </th>
+                    <th className="d-none d-sm-inline">
+                      {obj.hypothesis ? (
+                        <i
+                          title="Hypothetical Statement Suggesting Interaction"
+                          className="fa fa-star-half-o"
+                          aria-hidden="true"
+                        />
+                      ) : (
                           <i
-                            title="True Hypothesis"
-                            className="fa fa-star-half-o"
+                            className="fa fa-star invisible"
                             aria-hidden="true"
                           />
-                        </span>
-                        ) : ""}
-                        {obj.negInfo ? (
+                        )}
+                    </th>
+                    <th className="d-none d-sm-inline">
+                      {obj.negInfo ? (
+                        <i
+                          title="Statement Suggesting Absence of an Interaction"
+                          className="fa fa-minus-circle"
+                        />
+                      ) : (
+                          <i className="fa fa-minus-circle invisible" />
+                        )}
+                    </th>
+                    <th className="d-none d-sm-inline">
+                      {this.getOrgFromTaxonomy(obj.species)}
+                    </th>
+                    <td>
+                      <div className="row">
+                        <div className={"d-sm-none col-12 " + style.mobileSentenceView} >
                           <span>
-                            <i
-                              title="Negative Information"
-                              className="fa fa-minus-circle"
-                            />
+                            <a
+                              title="Link to Full-Text Article"
+                              href={`https://www.ncbi.nlm.nih.gov/pmc/articles/PMC${
+                                obj.pmcid
+                                }#:~:text=${this.generateTextFragment(obj.sentence)}`}
+                              target="_blank"
+                              rel="noopener"
+                            >
+                              <i className="fa fa-file-text-o" aria-hidden="true" />
+                            </a>
                           </span>
-                        ) : ""}
-                        <span>
-                          {this.getOrgFromTaxonomy(obj.species)}
-                        </span>
+                          {obj.hypothesis ? (
+                            <span>
+                              <i
+                                title="Hypothetical Statement Suggesting Interaction"
+                                className="fa fa-star-half-o"
+                                aria-hidden="true"
+                              />
+                            </span>
+                          ) : ""}
+                          {obj.negInfo ? (
+                            <span>
+                              <i
+                                title="Statement Suggesting Absence of an Interaction"
+                                className="fa fa-minus-circle"
+                              />
+                            </span>
+                          ) : ""}
+                          <span>
+                            {this.getOrgFromTaxonomy(obj.species)}
+                          </span>
+                        </div>
+                        <div
+                          className="col-sm-9"
+                          dangerouslySetInnerHTML={{
+                            __html: obj.html,
+                          }}
+                        />
+                        <div className="col-sm-3"><em>{obj.title}</em><small className="d-sm-none">{obj.year.length > 0 ? (", " + obj.year) : ""}<hr /></small></div>
+
                       </div>
-                      <div
-                        className="col-sm-9"
-                        dangerouslySetInnerHTML={{
-                          __html: obj.html,
-                        }}
-                      />
-                      <div className="col-sm-3"><em>{obj.title}</em><small className="d-sm-none">{obj.year.length>0?(", "+obj.year):""}<hr /></small></div>
-                      
-                    </div>
-                  </td>
-                  <th className="d-none d-sm-inline ">{obj.year}</th>
-                </tr>
-              )
-            })
-          )}
+                    </td>
+                    <th className="d-none d-sm-inline ">{obj.year}</th>
+                  </tr>
+                )
+              })
+            )}
         </tbody>
         {/* PAGINATION HAS BEEN SKIPPED DUE TO LOW NUMBER OF SENTENCES */}
         <tfoot className="invisible">
