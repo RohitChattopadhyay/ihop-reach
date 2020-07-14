@@ -43,7 +43,7 @@ export default function DetailsTemplate({ data }) {
               </p>
             </div>
             <div className="col-sm-1 text-right" title="See how to Interpreting Search Results">
-              <a href="/#interpret_result:~:text=Interpreting%20Search%20Results" target="_blank" rel="noopener">
+              <a href="/#interpret_result" target="_blank" rel="noopener">
                 Help❔
               </a>
             </div>
