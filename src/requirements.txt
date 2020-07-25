@@ -1,2 +1,2 @@
-pymongo=*
-indra=*
+pymongo==3.10.1
+indra==1.17.0
