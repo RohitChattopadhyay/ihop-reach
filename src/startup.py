@@ -12,7 +12,7 @@ ram_limit = os.getenv('MEMORY_LIMIT', 12)
 file_limit = os.getenv('FILE_LIMIT', None)
 file_start = os.getenv('FILE_START', None)
 
-def main():
+if __name__ == '__main__':
     file_names = [
         "non_comm_use.A-B", 
         "non_comm_use.O-Z", 
