@@ -11,9 +11,9 @@ from pymongo import MongoClient
 
 class Database:
     def __init__(self):
-        self.mongo_url = os.getenv('MONGO_SRV', 'localhost')
+        self.mongo_url = os.getenv('MONGO_SRV', '172.17.0.6')
         self.mongo_port = os.getenv('MONGO_PORT', 27017)
-
+        print(os.environ)
         try:
             mongo_client = MongoClient(
                 connect=False, host=self.mongo_url, port=self.mongo_port)
@@ -46,6 +46,7 @@ class Database:
             if count == 0:
                 with open(destFile, "a") as myfile:
                     myfile.write(filePath)
+                    myfile.write('\n')
             return
 
         for line in file_content:
